@@ -9,6 +9,7 @@ import { MotionSection, StaggeredChildren } from "@/components/animations/motion
 import { ParallaxLayer } from "@/components/animations/parallax-layer";
 import { Counter } from "@/components/animations/counter";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -82,13 +83,13 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="group" asChild>
-                <a href="/about">
+                <Link to="/about">
                   Learn More 
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </Button>
               <Button size="lg" variant="glass" asChild>
-                <a href="/team">Meet Our Team</a>
+                <Link to="/team">Meet Our Team</Link>
               </Button>
             </div>
           </motion.div>
@@ -231,7 +232,7 @@ export default function Home() {
               reduce post-harvest losses, increase farmer incomes, and improve food availability.
             </p>
             <Button size="lg" asChild>
-              <a href="/about">Learn About Our Approach</a>
+              <Link to="/about">Learn About Our Approach</Link>
             </Button>
           </div>
         </div>

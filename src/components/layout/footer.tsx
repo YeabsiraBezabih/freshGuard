@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const contactInfo = {
   email: "freshguard@aastu.edu.et",
@@ -66,16 +67,16 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-primary-300 transition-colors">Home</a>
+                <Link to="/" className="hover:text-primary-300 transition-colors">Home</Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-primary-300 transition-colors">About Us</a>
+                <Link to="/about" className="hover:text-primary-300 transition-colors">About Us</Link>
               </li>
               <li>
-                <a href="/team" className="hover:text-primary-300 transition-colors">Our Team</a>
+                <Link to="/team" className="hover:text-primary-300 transition-colors">Our Team</Link>
               </li>
               <li>
-                <a href="/reports" className="hover:text-primary-300 transition-colors">Weekly Reports</a>
+                <Link to="/reports" className="hover:text-primary-300 transition-colors">Weekly Reports</Link>
               </li>
             </ul>
           </motion.div>
