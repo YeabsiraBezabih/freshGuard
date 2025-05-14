@@ -55,7 +55,7 @@ export function AnimeText({
         opacity: 1,
         duration: duration / text.length,
         easing: 'easeInOutQuad',
-        delay: (el, i) => delay + (i * staggerDelay)
+        delay: (_el, i) => delay + (i * staggerDelay)
       });
     } 
     else if (animation === 'wave') {
@@ -79,7 +79,7 @@ export function AnimeText({
         opacity: [0, 1, 1],
         easing: 'easeInOutSine',
         duration: duration,
-        delay: (el, i) => delay + (i * staggerDelay),
+        delay: (_el, i) => delay + (i * staggerDelay),
         loop: false
       });
     }
@@ -106,7 +106,7 @@ export function AnimeText({
         scale: [0.5, 1],
         easing: 'easeOutElastic(1, .6)',
         duration: duration,
-        delay: (el, i) => delay + (i * staggerDelay),
+        delay: (_el, i) => delay + (i * staggerDelay),
       });
     }
     else {
@@ -122,7 +122,7 @@ export function AnimeText({
         translateY: [20, 0],
         easing: 'easeInOutQuad',
         duration: duration,
-        delay: delay
+        delay: (_el, i) => delay + (i * staggerDelay)
       });
     }
   }, [text, animation, delay, duration, className, Tag, staggerDelay]);
