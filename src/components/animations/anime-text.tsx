@@ -41,7 +41,7 @@ export function AnimeText({
       textNode.textContent = '';
       
       // Create a span for each character
-      Array.from(textContent).forEach((char, i) => {
+      Array.from(textContent).forEach((char) => {
         const charSpan = document.createElement('span');
         charSpan.textContent = char;
         charSpan.style.opacity = '0';
@@ -65,7 +65,7 @@ export function AnimeText({
       container.appendChild(textNode);
       
       // Create a span for each character
-      Array.from(text).forEach((char, i) => {
+      Array.from(text).forEach((char) => {
         const charSpan = document.createElement('span');
         charSpan.textContent = char === ' ' ? '\u00A0' : char; // Replace spaces with non-breaking spaces
         charSpan.style.display = 'inline-block';
@@ -90,7 +90,7 @@ export function AnimeText({
       container.appendChild(textNode);
       
       // Create a span for each character
-      Array.from(text).forEach((char, i) => {
+      Array.from(text).forEach((char) => {
         const charSpan = document.createElement('span');
         charSpan.textContent = char === ' ' ? '\u00A0' : char; // Replace spaces with non-breaking spaces
         charSpan.style.display = 'inline-block';

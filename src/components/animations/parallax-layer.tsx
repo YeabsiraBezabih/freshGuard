@@ -1,5 +1,5 @@
-import { useRef, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 
 interface ParallaxLayerProps {
   className?: string;
@@ -29,8 +29,8 @@ export function ParallaxLayer({
   const end = endOffset / 100;
   
   // Calculate the distance based on direction and speed
-  let x = 0;
-  let y = 0;
+  let x: MotionValue<number> = useTransform(() => 0);
+  let y: MotionValue<number> = useTransform(() => 0);
   const distance = 100 * speed; // Pixels to move
   
   if (direction === 'up') {

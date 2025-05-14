@@ -8,16 +8,6 @@ import { GraduationCap, User, Mail } from "lucide-react";
 import { teamMembers } from "@/data/team-members";
 
 export default function Team() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {

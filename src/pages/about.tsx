@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { MotionSection, StaggeredChildren } from "@/components/animations/motion-section";
 import { Calendar, FlaskConical, ScalingIcon as SeedlingIcon, DropletIcon, PackageCheck, TrendingUp } from "lucide-react";
-import { ParallaxLayer } from "@/components/animations/parallax-layer";
 import { AnimeText } from "@/components/animations/anime-text";
 
 const processSteps = [
